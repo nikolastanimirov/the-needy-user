@@ -4,7 +4,10 @@ if (typeof global === 'undefined') {
 }
 
 /* write your code here */
-
+function get(input){
+  return fetch(input)
+  .then((res)=>res.json());
+}
 
 
 // define the api-client object to be exported
